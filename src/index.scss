@@ -1,0 +1,27 @@
+@import "reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@300;400;500&display=swap");
+
+body {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}

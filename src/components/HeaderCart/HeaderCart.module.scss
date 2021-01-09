@@ -1,0 +1,106 @@
+.cart {
+  height: 70px;
+  display: flex;
+  margin-right: 20px;
+  margin-left: auto;
+  &__left_side {
+    border-right: 1px solid #c7c7c7;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 5px;
+  }
+  &__right_side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20px;
+    cursor: pointer;
+    &:hover{
+        .wish__logo{
+            background-color: #eec91f;
+        }
+    }
+  }
+  &__count {
+    display: flex;
+    align-items: center;
+    color: #6d6d6d;
+    svg {
+      height: 28px;
+      width: auto;
+      fill: #79b260;
+      margin-right: 10px;
+    }
+    &_text {
+      font-size: 23px;
+      span {
+        font-size: 13px;
+        margin-left: 5px;
+      }
+    }
+  }
+  &__checkout {
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-evenly;
+    width: 100%;
+    &_price {
+      font-size: 27px;
+      font-weight: 700;
+      color: #6d6d6d;
+    }
+    &_button {
+      color: #fff;
+      border: 1px solid #232323;
+      box-shadow: inset 1px 1px 0px 0px rgba(105, 105, 105, 1);
+      border-radius: 3px;
+      background: linear-gradient(0deg, #252525 0%, #414141 50%, #414141 100%);
+      cursor: pointer;
+      height: 28px;
+      padding: 0 7px;
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+  .wish {
+    &__logo {
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      background-color: #424242;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color .3s ease;
+
+      svg {
+        fill: #fff;
+        height: 15px;
+        width: auto;
+      }
+    }
+    &__text {
+      color: #6d6d6d;
+      font-size: 21px;
+      position: relative;
+      margin-top: 6px;
+    }
+    &__count {
+      position: absolute;
+      top: -15px;
+      right: -20px;
+      font-size: 13px;
+      color: #fff;
+      background-color: #79b260;
+      width: 28px;
+      height: 16px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
