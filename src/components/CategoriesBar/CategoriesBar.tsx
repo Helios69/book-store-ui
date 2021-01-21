@@ -1,29 +1,20 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import { mainCategoryRoutes as categories } from "../../routes";
 import styles from "./CategoriesBar.module.scss";
 
 interface CategoriesBarProps {}
 
 function CategoriesBar({}: CategoriesBarProps) {
-  const categories = [
-    "Computers",
-    "Cooking",
-    "Education",
-    "Fiction",
-    "Health",
-    "Mathematics",
-    "Medical",
-    "Reference",
-    "Science",
-  ];
-
   return (
     <div className={styles.categories}>
       <div className="container">
         <div className={styles.categories__list}>
-          {
-            categories.map(category => <a href='#' className={styles.categories__item}>{category}</a>)
-          }
-          
+          {categories.map((category) => (
+            <NavLink to={category.path} activeClassName={styles.active} className={styles.categories__item}>
+              {category.name}
+            </NavLink>
+          ))}
         </div>
       </div>
     </div>

@@ -1,0 +1,12 @@
+.copyright {
+    border-top: 1px solid #555454;
+    background-color: #2c302d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    &__text{
+        color: #ddd;
+        text-align: center;
+    }
+}

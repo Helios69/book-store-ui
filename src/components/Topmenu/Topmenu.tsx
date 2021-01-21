@@ -6,10 +6,18 @@ function Topmenu({}) {
     <div className={styles.topbar}>
       <div className="container">
         <ul className={styles.topbar__menu}>
-          <li className={styles.topbar__menu_item}>Sign in</li>
-          <li className={styles.topbar__menu_item}>My account</li>
-          <li className={styles.topbar__menu_item}>Order status</li>
-          <li className={styles.topbar__menu_item}>Help</li>
+          <li className={styles.topbar__menu_item}>
+            <a href="#">Sign in</a>
+          </li>
+          <li className={styles.topbar__menu_item}>
+            <a href="#">My account</a>
+          </li>
+          <li className={styles.topbar__menu_item}>
+            <a href="#">Order status</a>
+          </li>
+          <li className={styles.topbar__menu_item}>
+            <a href="#">Help</a>
+          </li>
         </ul>
       </div>
     </div>

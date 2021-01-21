@@ -25,3 +25,14 @@ a {
   margin: 0 auto;
   height: 100%;
 }
+
+.card {
+  border: 1px solid #d6d6d6;
+  border-radius: 1px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

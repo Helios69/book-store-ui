@@ -14,7 +14,7 @@
       padding: 0 20px;
       font-size: 19px;
       color: #5b5b5b;
-      &:hover{
+      &.active, &:hover{
         background: linear-gradient(0deg, #7ab361 0%, #92d774 100%);
         color: #fff;
       }

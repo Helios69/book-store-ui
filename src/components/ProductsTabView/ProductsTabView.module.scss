@@ -1,0 +1,43 @@
+.tabview {
+  position: relative;
+  flex-grow: 1;
+  &__navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 2;
+    &_item {
+      &:last-child {
+        border-right: 1px solid #cacfd2;
+      }
+      a {
+        height: 41px;
+        border: 1px solid #cacfd2;
+        border-right: none;
+        background: linear-gradient(0deg, #e2e2e2 0%, #f9f9f9 100%);
+        padding: 0 22px;
+        display: block;
+        display: flex;
+        align-items: center;
+        color: #6b6969;
+        &.active {
+          background: #fff;
+          border-bottom: none;
+          color: #464646;
+        }
+      }
+    }
+  }
+  &__content {
+    position: relative;
+    border: 1px solid #cacfd2;
+    margin-top: 40px;
+    padding: 22px 22px 60px 22px;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}

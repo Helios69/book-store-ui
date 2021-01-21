@@ -1,0 +1,30 @@
+.pagination {
+  position: absolute;
+  bottom: 4px;
+  right: 20px;
+  display: flex;
+  &__item {
+    position: relative;
+    height: 24px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    color: #646464;
+    font-size: 15px;
+    cursor: pointer;
+    &.active {
+      border: 1px solid #e0e0e0;
+      border-bottom: none;
+      &::after {
+        content: "";
+        width: calc(100% + 2px);
+        height: 4px;
+        background-color: #81bd66;
+        position: absolute;
+        bottom: -4px;
+        left: -1px;
+        display: block;
+      }
+    }
+  }
+}

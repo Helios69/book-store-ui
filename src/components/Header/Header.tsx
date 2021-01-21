@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import HeaderCart from "../HeaderCart/HeaderCart";
 import Searchbar from "../Searchbar/Searchbar";
@@ -10,9 +11,9 @@ function Header({}: HeaderProps) {
   return (
     <div className={styles.header}>
       <div className={`container ${styles.header__container}`}>
-        <a href="#" className={styles.header__logo}>
+        <Link to="/" className={styles.header__logo}>
           <img src={Logo} alt="" />
-        </a>
+        </Link>
         <Searchbar />
         <HeaderCart />
       </div>
