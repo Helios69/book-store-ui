@@ -1,0 +1,29 @@
+.review {
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px solid #e3e3e3;
+  &:last-child {
+    border-bottom: none;
+  }
+  &__author {
+    margin-right: 16px;
+    width: 64px;
+    &_avatar {
+      height: 64px;
+      width: 64px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 1px solid #e3e3e3;
+    }
+    &_fullname {
+      font-size: 14px;
+      color: #a2a2a2;
+      text-align: center;
+    }
+  }
+  &__text {
+    font-size: 13px;
+    color: #7e7e7e;
+    line-height: 21px;
+  }
+}

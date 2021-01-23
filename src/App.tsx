@@ -12,7 +12,7 @@ function App() {
     <div className="app">
       <Topmenu />
       <Header />
-      <CategoriesBar />
+      <CategoriesBar /> 
       {/* <Switch>
         {pages.map(({ component, path, exact }) => (
           <Route key={path} exact={exact} path={path}>
